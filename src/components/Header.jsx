@@ -60,7 +60,7 @@ function Header() {
             ))}
           </nav>
 
-          <button className="hidden md:flex items-center gap-2 bg-blue-500 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105">
+          <button className="hidden md:flex items-center gap-2 bg-blue-500 text-white px-6 py-2.5 rounded-lg hover:bg-green-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105">
             Download CV Now
           </button>
 
@@ -85,7 +85,7 @@ function Header() {
                 {item.name}
               </button>
             ))}
-            <button className="mt-4 w-full flex items-center justify-center gap-2 bg-green-400 text-white px-6 py-2.5 rounded-lg hover:bg-green-600 transition-all duration-300">
+            <button className="mt-4 w-full flex items-center justify-center gap-2 bg-blue-400 text-white px-6 py-2.5 rounded-lg hover:bg-green-600 transition-all duration-300">
               Download CV now
             </button>
           </nav>
