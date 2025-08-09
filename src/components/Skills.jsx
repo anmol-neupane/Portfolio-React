@@ -19,9 +19,9 @@ function Skills() {
         "I have completed my bachelors in IT from Punjab University. I have learned different fundamentals of computer science in depth level.",
     },
     {
-      year: "2017-2019",
-      title: "Bachelors of IT",
-      institution: "Punjab University",
+      year: "2022-2024",
+      title: "Masters of IT",
+      institution: "University Of Wollongong",
       description:
         "I have completed my bachelors in IT from Punjab University. I have learned different fundamentals of computer science in depth level.",
     },
@@ -54,21 +54,21 @@ function Skills() {
               <p className="text-blue-400 font-semibold text-lg mb-4">
                 Qualification
               </p>
-              <p className="text-blue-400 text-4xl font-bold mb-8">Education</p>
+              <p className="text-white text-4xl font-bold mb-8 ">Education</p>
             </div>
 
             <div className="space-y-8">
               {education.map((edu, index) => (
                 <div
                   key={index}
-                  className="border-0.5 border-blue-500 pl-6 relative group transition-all duration-1000"
+                  className="border-2 border-blue-900 pl-6 hover:bg-blue-900 relative group transition-all duration-1000"
                 >
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-300 rounded-full group-hover:scale-125 transition-all duration-300" />
-                  <div className="text-blue-400 text-lg font-bold mb-2 transition-all duration-300">
+                  <div className="absolute -left-2 top-0 w-4 h-4 bg-yellow-0 rounded-full group-hover:scale-125 transition-all duration-300" />
+                  <div className="text-white text-lg font-bold mb-2 transition-all duration-300">
                     {edu.title}
                   </div>
                   <p className="text-white">{edu.description}</p>
-                  <p className="text-blue-400 italic mt-1">{edu.institution}</p>
+                  <p className="text-white bold mt-1">{edu.institution}</p>
                   <p className="text-gray-400 text-sm mt-1">{edu.year}</p>
                 </div>
               ))}
@@ -87,7 +87,7 @@ function Skills() {
                   <p className="font-semibold mb-1">{skill.name}</p>
                   <div className="w-full bg-gray-700 rounded-full h-4">
                     <div
-                      className="bg-blue-500 h-4 rounded-full"
+                      className=" bg-blue-500 h-4 rounded-full hover:bg-blue-300 transition-all duration300 "
                       style={{ width: `${skill.level}%` }}
                     />
                   </div>

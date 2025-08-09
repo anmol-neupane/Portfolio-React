@@ -53,9 +53,12 @@ function Hero() {
                     : "opacity-0 translate-y-10"
                 }`}
               >
-                Winner of Australia's most covered fashion and Technology brand,
-                with Anmol more focused on clients all over the world. I help
-                create more visual online experiences as well as physical ones.
+                Aspiring technology entrepreneur committed to lifelong learning
+                and using technical expertise to create positive community
+                impact. Skilled in MERN stack development, dedicated to
+                collaboration, and delivering high-quality, up-to-date software
+                solutions. Passionate about aligning with company goals to drive
+                continuous success and provide excellent client service.
               </p>
             </div>
 

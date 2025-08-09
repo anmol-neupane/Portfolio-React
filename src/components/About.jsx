@@ -38,9 +38,9 @@ function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Image */}
           <div className="relative transition-all duration-1000">
-            <div className="relative group w-full max-w-md mx-auto border-4 border-blue-500 rounded-2xl p-2 hover:border-green-400 transition-all duration-300">
+            <div className="relative group w-full max-w-md mx-auto border-2 border-blue-500 rounded-2xl p-2 hover:border-green-400 transition-all duration-300">
               <img
-                src="https://www.pngmart.com/files/22/Programmer-PNG-Photos.png"
+                src="https://static.vecteezy.com/system/resources/previews/044/428/143/non_2x/cartoon-character-with-the-desk-working-concept-illustration-free-png.png"
                 alt="Programmer"
                 className="w-full rounded-xl transition-all duration-500 group-hover:scale-105"
               />
@@ -70,16 +70,24 @@ function About() {
               <p
                 className={`text-lg transition-all duration-100 delay delay-500`}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-                veritatis repellat. Vero quia explicabo aliquid, possimus
-                tempora odio recusandae labore, asperiores qui ipsam totam!
-                Ullam corrupti labore provident eius eum.
+                I am a highly qualified candidate for your upcoming project,
+                bringing comprehensive expertise in full-stack development and
+                contemporary technologies. I am dedicated to thoroughly
+                understanding your business objectives in order to deliver
+                customized solutions that precisely address your requirements.
+                Through clear and consistent communication, an unwavering
+                commitment to quality and punctual delivery, and a continuous
+                pursuit of learning and innovation, I ensure that every
+                challenge is addressed with effective and innovative
+                problem-solving.
               </p>
-              <p className={`transition-all duration-1000 delay-700`}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                saepe incidunt dolorem eveniet minima culpa commodi adipisci
-                quam nobis placeat. Deleniti, fugit omnis? Aperiam hic minus
-                labore sit delectus qui.
+              <p className={`text-lg transition-all duration-1000 delay-700`}>
+                I am committed to delivering exceptional results by combining
+                technical expertise with a strong work ethic and collaboration.
+                I prioritize understanding your business goals and maintain
+                clear communication to ensure alignment. My focus on continuous
+                improvement and adaptability enables me to proactively solve
+                challenges and deliver innovative solutions.
               </p>
             </div>
 
@@ -87,32 +95,33 @@ function About() {
               className={`grid grid-cols-2 gap-8 py-6 transition-all duration-1000 delay-500`}
             >
               <div className="group">
-                <p className="text-white font-semibold group-hover:text-green-400 transition-all duration-300">
+                <p className="text-blue-400 font-semiboldtransition-all duration-300">
                   Name
                 </p>
                 <p className="text-white font-semibold">Anmol Neupane</p>
+                <p className="text-white font-semibold">
+                  Full stack Software Engineer
+                </p>
               </div>
               <div className="group">
-                <p className="text-white font-semibold group-hover:text-green-400 transition-all duration-300">
+                <p className="text-blue-400 font-semibold transition-all duration-300">
                   Location
                 </p>
                 <p className="text-white font-semibold">
                   Wollongong, NSW, 2500
                 </p>
                 <div className="group">
-                  <p className="text-white font-semibold group-hover:text-green-400 transition-all duration-300">
-                    Email:
+                  <p className="text-white font-semibold transition-all duration-300">
+                    Email: anmol.neupaney@gmail.com
                   </p>
-                  <p className="text-white font-semibold">
-                    anmol.neupaney@gmail.com
-                  </p>
+                  <p className="text-white font-semibold"></p>
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 transition-all duration-1000 delay-1100">
                 <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-all duration300 font-medium shadow-lg hover:shadow-xl hover:scale-105">
                   Download
                 </button>
-                <button className="border-2 border-blue-600 text-white px-8 py-3 rounded-lg hover:border-green-600 hover:text-green-400 transition-all duration-300 font-medium hover:scale-105">
+                <button className="border-1 border-blue-600 text-white px-8 py-3 rounded-lg hover:border-green-600 hover:text-green-400 transition-all duration-300 font-medium hover:scale-105">
                   LEARN MORE
                 </button>
               </div>
