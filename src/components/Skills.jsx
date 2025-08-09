@@ -2,12 +2,12 @@ import React from "react";
 
 function Skills() {
   const skills = [
-    { name: "UI/UX", level: 78 },
-    { name: "React", level: 78 },
-    { name: "Docker", level: 78 },
-    { name: "NODEJs", level: 78 },
-    { name: "Express", level: 78 },
-    { name: "Mongoose", level: 78 },
+    { name: "UI/UX", level: 90 },
+    { name: "React", level: 80 },
+    { name: "Docker", level: 55 },
+    { name: "Node.js", level: 80 },
+    { name: "Express", level: 75 },
+    { name: "Mongoose", level: 85 },
   ];
 
   const education = [
@@ -16,21 +16,14 @@ function Skills() {
       title: "Bachelors of IT",
       institution: "Punjab University",
       description:
-        "I have completed my bachelors in IT from Punjab University. I have learned different fundamentals of computer science in depth level.",
+        "Completed a comprehensive degree in Information Technology, mastering computer science fundamentals and software development principles.",
     },
     {
       year: "2022-2024",
       title: "Masters of IT",
-      institution: "University Of Wollongong",
+      institution: "University of Wollongong",
       description:
-        "I have completed my bachelors in IT from Punjab University. I have learned different fundamentals of computer science in depth level.",
-    },
-    {
-      year: "2017-2019",
-      title: "Bachelors of IT",
-      institution: "Punjab University",
-      description:
-        "I have completed my bachelors in IT from Punjab University. I have learned different fundamentals of computer science in depth level.",
+        "Focused on advanced computing concepts, software engineering, and cutting-edge technologies to drive innovation and problem-solving.",
     },
   ];
 
@@ -39,55 +32,70 @@ function Skills() {
       id="skills"
       className="py-24 bg-slate-900 relative overflow-hidden"
     >
-      {/* Animated background effects */}
+      {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute bottom-20 left-10 w-72 h-72 bg-green-600/10 rounded-full blur-3xl"></div>
         <div className="absolute top-20 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full h-full bg-gradient-to-r from-transparent via-green-600/5 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-5 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Left: Education */}
-          <div className="transition-all duration-1000">
-            <div className="mb-12">
-              <p className="text-blue-400 font-semibold text-lg mb-4">
+      {/* Main Content */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+          {/* Education Section */}
+          <div className="transition-all duration-700 ease-in-out">
+            <div className="mb-10">
+              <p className="text-blue-400 font-semibold text-lg mb-2">
                 Qualification
               </p>
-              <p className="text-white text-4xl font-bold mb-8 ">Education</p>
+              <h2 className="text-white text-3xl sm:text-4xl font-bold">
+                Education
+              </h2>
             </div>
-
-            <div className="space-y-8">
+            <div className="space-y-6">
               {education.map((edu, index) => (
                 <div
                   key={index}
-                  className="border-2 border-blue-900 pl-6 hover:bg-blue-900 relative group transition-all duration-1000"
+                  className="border border-blue-900 rounded-lg p-4 sm:p-6 hover:bg-blue-900/30 relative group transition-all duration-300"
                 >
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-yellow-0 rounded-full group-hover:scale-125 transition-all duration-300" />
-                  <div className="text-white text-lg font-bold mb-2 transition-all duration-300">
+                  <div className="absolute -left-2 top-4 w-4 h-4 bg-yellow-400 rounded-full group-hover:scale-125 transition-transform duration-300"></div>
+                  <h3 className="text-white text-lg font-bold mb-2">
                     {edu.title}
-                  </div>
-                  <p className="text-white">{edu.description}</p>
-                  <p className="text-white bold mt-1">{edu.institution}</p>
-                  <p className="text-gray-400 text-sm mt-1">{edu.year}</p>
+                  </h3>
+                  <p className="text-gray-300 text-sm mb-1">
+                    {edu.institution}
+                  </p>
+                  <p className="text-gray-400 text-xs mb-3">{edu.year}</p>
+                  <p className="text-white text-sm leading-relaxed">
+                    {edu.description}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right: Skills */}
-          <div className="transition-all duration-1000 delay-300">
-            <div className="mb-12">
-              <p className="text-blue-400 font-semibold text-lg mb-4">Expert</p>
-              <p className="text-white text-4xl font-bold mb-8">My skills</p>
+          {/* Skills Section */}
+          <div className="transition-all duration-700 ease-in-out delay-150">
+            <div className="mb-10">
+              <p className="text-blue-400 font-semibold text-lg mb-2">
+                Expertise
+              </p>
+              <h2 className="text-white text-3xl sm:text-4xl font-bold">
+                My Skills
+              </h2>
             </div>
             <div className="space-y-6">
               {skills.map((skill, idx) => (
                 <div key={idx} className="text-white">
-                  <p className="font-semibold mb-1">{skill.name}</p>
-                  <div className="w-full bg-gray-700 rounded-full h-4">
+                  <div className="flex justify-between mb-1">
+                    <p className="font-semibold">{skill.name}</p>
+                    <span className="text-gray-400 text-sm">
+                      {skill.level}%
+                    </span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-3 sm:h-4 overflow-hidden">
                     <div
-                      className=" bg-blue-500 h-4 rounded-full hover:bg-blue-300 transition-all duration300 "
+                      className="bg-blue-500 h-3 sm:h-4 rounded-full transition-all duration-500 ease-in-out"
                       style={{ width: `${skill.level}%` }}
                     />
                   </div>
