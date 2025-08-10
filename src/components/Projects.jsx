@@ -2,16 +2,16 @@ import React from "react";
 function Projects() {
   const projects = [
     {
-      title: "Diversity Interactive Workshop",
+      title: "Portfolio Website",
       description: "An engaging activity-based project on workplace diversity.",
       image: "/assets/new.jpg",
       link: "https://anmolneupane.com/",
     },
     {
-      title: "Portfolio Website",
+      title: "Restaurant Website",
       description: "A personal portfolio built with React and TailwindCSS.",
       image: "/assets/news.jpg",
-      link: "https://your-link-here.com",
+      link: "https://anmol-neupane.github.io/The-Icon/",
     },
     {
       title: "E-commerce App",
