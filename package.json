@@ -1,5 +1,6 @@
 {
   "name": "package.json",
+  "homepage": "https://anmolneupane.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +15,7 @@
     "lucide-react": "^0.537.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-tsparticles": "^2.12.2",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
